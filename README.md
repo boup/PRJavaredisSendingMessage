@@ -23,3 +23,14 @@ QueueService RedisQueueService =  implement the method that will enqueue events 
 event-queue-config2.xml = create the queue config
 
 EventProcessingService and RedisEventProcessingService = service which will actually process the event.
+
+Requirement:
+We need to install
+Redis server(sudo apt-get install redis-server)
+Systemctl start redis.service
+then
+redis-cli monitor(to check if the message were send)
+
+
+
+
